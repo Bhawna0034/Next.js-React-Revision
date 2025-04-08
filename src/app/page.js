@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Greeting from "./components/Greeting";
+import Counter from "./components/Counter";
 
 export default function Home() {
   return (
-    <main>
-      <Greeting name="Bhawna" />
+    <main className="flex items-center justify-center h-lvh">
+      <Counter />
     </main>
   );
 }

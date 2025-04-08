@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Counter from "./components/Counter";
-import UserStatus from "./components/UserStatus";
+import TodoList from "./components/TodoList";
 
 export default function Home() {
   const isLoggedIn = true;
   return (
     <main className="flex items-center justify-center h-lvh">
-      <UserStatus isLoggedIn={isLoggedIn}/>
+      <TodoList/>
     </main>
   );
 }

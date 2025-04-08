@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const FetchUserData = () => {
   const [apiData, setApiData] = useState([]);
@@ -25,12 +26,13 @@ const FetchUserData = () => {
   useEffect(() => {
     fetchdata();
   },[]);
-  
+
   if (loading) return <p> Loading...</p>;
   if (error) return <p>{error}</p>;
 
   return (
     <div>
+        <Image src="/next.svg" alt="nextjs" width={50} height={50} className="mb-4" />
       <table className="w-full text-center border-collapse mb-4">
         <thead>
           <tr className="bg-gray-100">

@@ -1,13 +1,13 @@
 "use client"
 import Image from "next/image";
 
-import FormReducer from "./components/useReducer/FormReducer";
+import WithMemo from "./components/memo/WithMemo";
 
 export default function Home() {
   const isLoggedIn = true;
   return (
     <main className="flex items-center justify-center h-lvh">
-     <FormReducer/>
+     <WithMemo/>
     </main>
   );
 }

@@ -43,7 +43,7 @@ const FormReducer = () => {
       >
         Increment Age
       </button>
-      <p>Here is the incrment age {state.age}</p>
+      <p>Here is the increment age {state.age}</p>
     </div>
   );
 };

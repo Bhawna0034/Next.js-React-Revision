@@ -9,11 +9,11 @@ export async function generateMetadata({params}) {
 
 }
 const ProductDetails = async({params}) => {
-    // const {productID} = await params;
+    const {productID} = await params;
     
   return (
     <div>
-      Product {params.productID} Details
+      Product {productID} Details
     </div>
   )
 }

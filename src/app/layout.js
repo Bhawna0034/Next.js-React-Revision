@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
-// import "./globals.css";
+import "./globals.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +23,13 @@ export default function AuthLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <header className="bg-orange-600 py-2">
+        <header className="bg-orange-600 py-2">
           <p className="text-center">Header</p>
-        </header> */}
+        </header>
         {children}
-        {/* <footer className="bg-green-600 py-2">
+        <footer className="bg-green-600 py-2">
           <p className="text-center">Footer</p>
-        </footer> */}
+        </footer>
       </body>
     </html>
   );

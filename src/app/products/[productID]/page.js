@@ -1,11 +1,19 @@
 import React from 'react'
 
-const ProductDetails = async({params}) => {
+export async function generateMetadata({params}) {
     const {productID} = await params;
+    return {
+        title: `Product ${productID} `,
+        description: `This is a product ${productID} page, learning about Metadata`
+    };
+
+}
+const ProductDetails = async({params}) => {
+    // const {productID} = await params;
     
   return (
     <div>
-      Product {productID} Details
+      Product {params.productID} Details
     </div>
   )
 }

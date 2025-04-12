@@ -9,9 +9,8 @@ export const metadata = {
 }
 const About = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <Link href="/" className='text-blue-800 underline'>Home</Link>
+    <div className='flex items-center justify-center h-lvh'>
+      <h1 className='text-5xl font-bold '>About Us</h1>
     </div>
   )
 }
